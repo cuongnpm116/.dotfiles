@@ -84,6 +84,7 @@ xdg-desktop-portal-hyprland
 xdg-utils
 zen-browser-bin
 zsh
+power-profiles-daemon
 )
 
 # Cập nhật hệ thống

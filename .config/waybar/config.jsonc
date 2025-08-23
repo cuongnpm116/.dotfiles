@@ -1,16 +1,11 @@
-// -*- mode: jsonc -*-
 {
     "layer": "top",
     "position": "top",
     "width": 1920,
-    "height": 28,
+    "height": 32,
 
-    "modules-left": [
-        "custom/media",
-    ],
-    "modules-center": [
-        "hyprland/workspaces",
-    ],
+    "modules-left": ["custom/media"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "tray",
         "clock",
@@ -18,7 +13,7 @@
         "network",
         "backlight",
         "battery",
-        "power-profiles-daemon",
+        "power-profiles-daemon"
     ],
 
     "hyprland/workspaces": {
@@ -26,38 +21,36 @@
         "format-icons": {
             "active": "",
             "default": ""
-        },
-    },
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10,
-        "icons": {
-            "blueman": "bluetooth",
         }
     },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+
     "backlight": {
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
+
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+
     "power-profiles-daemon": {
         "format": "{icon}",
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -69,29 +62,25 @@
             "power-saver": ""
         }
     },
+
     "network": {
         "format-wifi": "{essid} ",
         "format-ethernet": "",
-        "format-disconnected": "⚠",
+        "format-disconnected": "⚠"
     },
+
     "pulseaudio": {
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
+
     "custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
@@ -101,6 +90,7 @@
             "default": "🎜"
         },
         "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    },
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+    }
 }
+

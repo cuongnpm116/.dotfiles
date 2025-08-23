@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # For each display, changes the wallpaper to a randomly chosen image in
 # a given directory at a set interval.
 
