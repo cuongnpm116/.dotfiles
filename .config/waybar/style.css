@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: 'CaskaydiaMono Nerd Font Mono', sans-serif;
+    font-family: 'CaskaydiaMono Nerd Font Mono', 'Symbols Nerd Font', sans-serif;
     font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
@@ -107,13 +107,11 @@ button:hover {
 }
 
 #clock {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #battery {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
@@ -144,18 +142,17 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
     background-color: #2980b9;
-    color: #000000;
+    color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
     background-color: #2ecc71;
-    color: #000000;
+    color: #ffffff;
 }
 
 label:focus {
@@ -163,8 +160,7 @@ label:focus {
 }
 
 #cpu {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #memory {
@@ -176,32 +172,26 @@ label:focus {
 }
 
 #backlight {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #network {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
 }
 
 #pulseaudio {
-    background-color: #00FFFF;
-    color: #000000;
+    color: #ffffff;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    color: #ffffff;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    color: #ffffff;
 }
 
 #wireplumber.muted {
@@ -231,7 +221,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    color: #ffffff;
 }
 
 #tray > .passive {

@@ -35,3 +35,5 @@ map.set("v", ">", ">gv")
 -- up/down in visual mode
 map.set("v", "J", ":m '>+1<CR>gv=gv")
 map.set("v", "K", ":m '<-2<CR>gv=gv")
+
+map.set({ "n", "v" }, "<leader>y", '"+y')
