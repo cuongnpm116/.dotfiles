@@ -47,3 +47,5 @@ vim.o.timeoutlen = 1000
 vim.o.termguicolors = true
 
 vim.o.wrap = false
+
+vim.o.laststatus = 3

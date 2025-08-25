@@ -11,7 +11,8 @@ config.font = wezterm.font_with_fallback({
 
 config.font_size = 14
 
-config.window_background_opacity = 0.9
+config.window_close_confirmation = 'NeverPrompt'
+config.window_background_opacity = 1
 -- config.window_decorations = 'RESIZE'
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
