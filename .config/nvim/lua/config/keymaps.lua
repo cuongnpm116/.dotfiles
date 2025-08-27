@@ -4,7 +4,7 @@ local map = vim.keymap
 map.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 -- open file explorer (netrw)
-map.set("n", "<leader>pv", "<cmd>Ex<cr>", { silent = true })
+map.set("n", "<leader>pv", vim.cmd.Ex, { silent = true })
 
 -- delete single char without yanking into register
 map.set("n", "x", '"_x')
@@ -24,7 +24,7 @@ map.set("n", "n", "nzzzv")
 map.set("n", "N", "Nzzzv")
 
 -- window management
-map.set("n", "<leader>xs", "<cmd>close<cr>")
+map.set("n", "<leader>x", "<cmd>close<cr>")
 map.set("n", "<leader>|", "<cmd>vsplit<cr>")
 map.set("n", "<leader>-", "<cmd>split<cr>")
 
@@ -36,4 +36,5 @@ map.set("v", ">", ">gv")
 map.set("v", "J", ":m '>+1<CR>gv=gv")
 map.set("v", "K", ":m '<-2<CR>gv=gv")
 
-map.set({ "n", "v" }, "<leader>y", '"+y')
+map.set({ "n", "v", "x" }, "<leader>y", '"+y')
+map.set({ "n", "v", "x" }, "<leader>p", '"+p')

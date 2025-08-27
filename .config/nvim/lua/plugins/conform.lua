@@ -24,6 +24,7 @@ return {
             lua = { "stylua" },
             python = { "isort", "black", stop_after_first = true },
             javascript = { "prettierd", "prettier", stop_after_first = true },
+            jsonc = { "prettierd", "prettier", stop_after_first = true },
         },
     },
 }
