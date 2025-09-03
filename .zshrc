@@ -1,9 +1,17 @@
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+eval "$(starship init zsh)"
 
-plugins=(git)
+# Enable completions
+autoload -U compinit
+compinit
 
-source $ZSH/oh-my-zsh.sh
+# zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-completions
+fpath+=('/usr/share/zsh/plugins/zsh-completions/src')
+
+# zsh-autocomplete
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export MANPAGER="nvim +Man!"
 

@@ -3,6 +3,9 @@ local map = vim.keymap
 -- disable Space's default behavior
 map.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
+-- This is going to get me cancelled
+map.set("i", "<C-c>", "<Esc>")
+
 -- open file explorer (netrw)
 map.set("n", "<leader>pv", vim.cmd.Ex, { silent = true })
 

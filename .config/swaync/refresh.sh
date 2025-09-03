@@ -1,3 +1,0 @@
-pkill swaync
-swaync
-
