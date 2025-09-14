@@ -1,0 +1,82 @@
+{
+  "layer": "top",
+  "position": "top",
+  "reload_style_on_change": true,
+
+  "modules-left": ["clock", "tray"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "backlight",
+    "power-profiles-daemon",
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name} {icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+    },
+  },
+
+  "tray": {
+    "spacing": 10,
+  },
+
+  "clock": {
+    "format": "{:%H:%M %Y-%m-%d} ",
+    "tooltip-format": "<big><tt>{calendar}</tt></big>",
+    "actions": {
+      "on-click-right": "shift_down",
+      "on-click": "shift_up",
+    },
+  },
+
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["󰁻", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"],
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+
+  "network": {
+    "format-wifi": "{essid} ",
+    "format-ethernet": "",
+    "format-disconnected": "",
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-muted": "󰝟 {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "default": ["", "", ""],
+    },
+    "on-click": "pavucontrol",
+  },
+}
