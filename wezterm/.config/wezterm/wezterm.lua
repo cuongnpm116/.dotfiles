@@ -9,6 +9,8 @@ config.font = wezterm.font_with_fallback({
     'Symbols Nerd Font', -- for powerline/extra glyphs
 })
 
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
+
 config.font_size = 12
 
 config.window_close_confirmation = 'NeverPrompt'
