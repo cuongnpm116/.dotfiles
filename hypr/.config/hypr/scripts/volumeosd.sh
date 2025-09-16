@@ -22,7 +22,7 @@ VOL=$(wpctl get-volume @DEFAULT_SINK@ | awk '{print $2 * 100}' | head -1 | tr -d
 MUTED=$(wpctl get-volume @DEFAULT_SINK@ | awk '{print $3}')
 
 if [ "$MUTED" = "[MUTED]" ]; then
-  notify-send -h string:synchronous:volume "🔇 Muted"
+  notify-send -h string:synchronous:volume "Muted"
 else
-  notify-send -h int:value:"$VOL" -h string:synchronous:volume "🔊 Volume $VOL%"
+  notify-send -h int:value:"$VOL" -h string:synchronous:volume "Volume $VOL%"
 fi
