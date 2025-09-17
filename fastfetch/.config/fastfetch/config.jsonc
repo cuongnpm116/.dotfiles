@@ -1,8 +1,11 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "source": "~/.config/fastfetch/art/acheron3.txt",
+    "source": "~/.config/fastfetch/art/himeko.txt",
     "type": "file",
+    "padding": {
+      "left": 15,
+    },
   },
   "modules": [
     "title",

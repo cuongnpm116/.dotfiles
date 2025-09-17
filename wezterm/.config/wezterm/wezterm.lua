@@ -1,8 +1,6 @@
 local wezterm = require('wezterm') --[[@as Wezterm]]
 local config = {}
 
-config.enable_wayland = true
-
 config.font = wezterm.font_with_fallback({
     'JetbrainsMono Nerd Font Mono', -- your main coding font
     'Noto Color Emoji', -- for emoji

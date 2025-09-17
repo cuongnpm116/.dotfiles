@@ -5,7 +5,12 @@
 
   "modules-left": ["clock", "tray"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network", "power-profiles-daemon"],
+  "modules-right": [
+    "network",
+    "wireplumber",
+    "backlight",
+    "power-profiles-daemon",
+  ],
 
   "hyprland/workspaces": {
     "format": "{name} {icon}",
@@ -63,15 +68,9 @@
     "format-disconnected": "",
   },
 
-  "pulseaudio": {
+  "wireplumber": {
     "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-muted": "󰝟 {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
-    "format-icons": {
-      "default": ["", "", ""],
-    },
-    "on-click": "pavucontrol",
+    "format-muted": "󰝟",
+    "format-icons": ["", "", ""],
   },
 }
