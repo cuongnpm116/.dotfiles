@@ -9,7 +9,7 @@ config.font = wezterm.font_with_fallback({
 
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 
-config.font_size = 12
+config.font_size = 14
 
 config.window_close_confirmation = 'NeverPrompt'
 config.window_background_opacity = 0.9
