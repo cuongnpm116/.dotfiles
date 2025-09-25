@@ -12,3 +12,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+
+. "$HOME/.local/share/../bin/env"

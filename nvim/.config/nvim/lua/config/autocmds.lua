@@ -77,10 +77,10 @@ autocmd("LspAttach", {
         vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, opts)
         vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
         vim.keymap.set("n", "[d", function()
-            vim.diagnostic.jump({ count = 1, float = true })
+            vim.diagnostic.jump({ count = -1, float = true })
         end, opts)
         vim.keymap.set("n", "]d", function()
-            vim.diagnostic.jump({ count = -1, float = true })
+            vim.diagnostic.jump({ count = 1, float = true })
         end, opts)
     end,
 })
