@@ -22,7 +22,7 @@ return {
         end,
         formatters_by_ft = {
             lua = { "stylua" },
-            python = { "isort", "black", stop_after_first = true },
+            python = { "black", stop_after_first = true },
             javascript = { "prettierd", "prettier", stop_after_first = true },
             jsonc = { "prettierd", "prettier", stop_after_first = true },
             json = { "prettierd", "prettier", stop_after_first = true },
