@@ -1,4 +1,4 @@
-# Created by newuser for 5.9
+alias ls='ls --color=auto'
 
 eval "$(starship init zsh)"
 
