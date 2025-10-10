@@ -1,10 +1,6 @@
 alias ls='ls --color=auto'
 
-eval "$(starship init zsh)"
-
 export MANPAGER='nvim +Man!'
-
-export PATH=$PATH:$HOME/go/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -13,4 +9,7 @@ export NVM_DIR="$HOME/.nvm"
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
-. "$HOME/.local/share/../bin/env"
+eval "$(starship init zsh)"
+# export PATH=$PATH:$HOME/go/bin
+#
+# . "$HOME/.local/share/../bin/env"
